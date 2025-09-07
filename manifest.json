@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리-Wêreldinligting",
+  "version": "1.0",
+  "description": "탐험하기 월드 페이지에 추가적인 정보를 표기해 줍니다.",
+  
+  "host_permissions": [
+    "https://space.playentry.org/*"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["https://space.playentry.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
